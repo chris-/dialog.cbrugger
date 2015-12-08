@@ -649,7 +649,7 @@
 						<p>In other words, everything you’ve done in your life up until this point in time has worked to get you where you are now, but it is also exactly what is keeping you to get to the next level of success.</p>
 						<p>Let us block out 2 hours and explore what your soul is aking you to do right now. Let us get creative and find ways you can create that new way of being for you right now.</p>
 						<p><strong>What if, you could see a clear path to whatever you would love to make happen and start TODAY?</strong></p>
-						<p><strong>If this calls to you or you want to know more, fill in the form above or email me at: <a href="mailto:christian@cbrugger.com">christian@cbrugger.com</a></strong></p>
+						<p><strong>If this calls to you or you want to know more, <a id="cta-lnk" href="#mce-EMAIL">signup above</a>.</strong></p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 ">
@@ -658,6 +658,20 @@
 			</div>
 		</div>
 	</div>
+	
+	
+<script>
+    $(document).ready(function() {
+      $('#cta-lnk').bind('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: ( $('.header-banner .description').first().offset().top )
+        }, 700, function() {
+          $( '#mce-EMAIL' ).focus();
+        });
+      });
+    });
+</script>
     
     
     
